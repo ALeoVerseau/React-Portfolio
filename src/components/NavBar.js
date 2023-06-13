@@ -50,7 +50,7 @@ const NavBar = () => {
                 {nav ? <FaBars size={30} /> : <FaBars size={30} />}
             </div>
             <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen">
-                <li> Home</li>
+                <li className="px-4 cursor-pointer py-6"> Home</li>
 
             </ul>
         </div>
