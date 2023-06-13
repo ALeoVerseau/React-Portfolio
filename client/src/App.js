@@ -1,9 +1,13 @@
+import NavBar from "./components/NavBar"
+
+
 function App() {
   return (
     <div>
-      <h1>
-        Hello
-      </h1>
+      <NavBar /> 
+      {/* <h1 className= "text-4xl front-bold">
+        Hello My name is the Toast
+      </h1> */}
     </div>
   );
 }
