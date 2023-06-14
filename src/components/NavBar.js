@@ -30,7 +30,7 @@ const NavBar = () => {
             <div>
                 {/* MY NAME IN LEFTHAND CORNER */}
                 <h1 className="text-5xl font-signature ml-2">
-                    Alexander Leo Liu
+                    Alexander Leonardo Seyhunh Liu
                 </h1>
             </div>
 
