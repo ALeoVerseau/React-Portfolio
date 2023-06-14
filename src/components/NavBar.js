@@ -16,13 +16,13 @@ const NavBar = () => {
         },
         {
             id: 3,
-            link: "Projects",
+            link: "Portfolio",
         },
         {
             id: 4,
             link: "Contact"
         },
-        
+
     ];
 
     return (
@@ -35,27 +35,36 @@ const NavBar = () => {
             </div>
 
             <ul className="hidden md:flex">
-                {links.map(({id, link}) => (
+                {links.map(({ id, link }) => (
                     // Nav Bar sections
-                <li key={id} 
-                className="px-4 cursor-pointer font-medium hover:scale-110 duration-200">
-                {/* <Link to= {links} smooth duration{500}> */}
-                {link}
-                {/* </Link> */}
-                </li>
+                    <li key={id}
+                        className="px-4 cursor-pointer font-medium hover:scale-110 duration-200">
+                        {/* <Link to= {links} smooth duration{500}> */}
+                        {link}
+                        {/* </Link> */}
+                    </li>
                 ))}
             </ul>
-            
-            <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10">
+
+            <div onClick={() => setNav(!nav)} className="cursor-pointer pr-4 z-10 md:hidden">
                 {nav ? <FaBars size={30} /> : <FaBars size={30} />}
             </div>
-            <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen">
-                <li className="px-4 cursor-pointer py-6"> Home</li>
 
-            </ul>
+
+            {nav && (
+                <ul className="flex flex-col justify-center items-center absolute top-0 left-0 w-full h-screen text-black">
+                    {links.map(({ id, link }) => (
+                        <li key={id}
+                            className="px-4 cursor-pointer font-medium hover:scale-110 duration-200">
+                            {link}
+                        </li>
+                    ))}
+                </ul>
+            )}
+
         </div>
     )
 
-} 
+}
 
 export default NavBar;
