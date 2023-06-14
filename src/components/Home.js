@@ -14,14 +14,14 @@ const Home = () => {
                         I am a fullstack developer in the making!
                     </p>
 
-                    <div>
+                    {/* <div>
                         <button className=' group w-fit px-6 py-3 my-2 flex item-center rounded-md cursor-pointer'>
                             Portfolio
                             <span className='group-hover:rotate-90 duration-300'>
                                 <MdOutlineKeyboardArrowRight />
                             </span>
                         </button>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>
